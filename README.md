@@ -234,3 +234,17 @@ No rate will be published before reaching a minimum of 100 observations per prov
 ---
 
 *Delivery verification observatory for x402. Open methodology, raw data published, measurements without value judgements.*
+
+---
+
+## Raw data
+
+**File:** `census.csv` — 15,034 rows, one per active mainnet resource.
+
+**SHA-256:** `6283cfbfe02995ec36536b5eeda757fae2c4c95a311dba653b2ffda3b1cecafd`
+
+Verify integrity after download: `sha256sum -c census.csv.sha256`
+
+Columns: resource_id, endpoint_url, chain, category, advertised_amount, pay_to, service_name, first_seen_at.
+
+Ingested 22 August 2026 from the CDP Bazaar and Binance B402 public discovery endpoints. Neither requires authentication; the census is reproducible against either at any time.
