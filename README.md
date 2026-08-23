@@ -248,3 +248,10 @@ Verify integrity after download: `sha256sum -c census.csv.sha256`
 Columns: resource_id, endpoint_url, chain, category, advertised_amount, pay_to, service_name, first_seen_at.
 
 Ingested 22 August 2026 from the CDP Bazaar and Binance B402 public discovery endpoints. Neither requires authentication; the census is reproducible against either at any time.
+
+---
+
+## Reports
+
+- 01 - Ecosystem census (this document)
+- 02 - [Providers declare shape, not quality](report-02-quality-declaration.md)

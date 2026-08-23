@@ -1,0 +1,137 @@
+service_name,pay_to,resources,freshness,quality,provenance
+x402 Live Probe,0x9f8bd9875b3e0b632a24a3a7c73f7787175e73a2,772,t,t,t
+Base Gas Snapshot,0xc85f0cf16f5e677bbe5dfc94662cc86f2fba0604,382,f,t,t
+EU Power Dispatch API,0x2880edfff13100677bf97a3cbdf3bc34771c4e5e,353,f,t,t
+entity-search,0xf22e558a00d91ee12a1f50c52186fecb8ddff493,348,t,t,t
+Agent402.tools,0xabf4fabd7c416fb67202e5f9002389fc75e2a9d0,181,t,t,f
+x402-factory,0xcc42ed39a06b6cf3f484307ef76b88bf56fb305f,121,f,t,t
+Stratalize,0x5d51ecc50813e0937a5c43be298e9146796ad60d,116,t,f,f
+WealthPulse,0x52ab53912d37759b2ad364f22dd06b16714b6c06,93,f,t,f
+NetIntel,0xdadc335482ad545296fd7b28518a251ffcbeb9df,79,t,t,t
+DopamineDesk AI Marketplace,0x8647f7d7a1368a467ad1ff757fbc2e7167973558,78,f,f,t
+Relaystation Image Convert,0x5f7254f252ef9b9f92b6b4f2cf91205ed7a96c7a,75,f,t,f
+AgentUtility.ai,0x6c0752c09e7f6fa6526fcdf40e456a159ebb5621,74,t,t,t
+2s,0x2b6d4988db4723e6908db86ab2b8dfbc51fc32c5,72,t,f,f
+WebberSites x402 Data API,0xdd5fcea81ca6f1eb39fed5b973de794293b81ba6,70,f,t,f
+Vaaya,0x7c655d3d3944bd27994dd81a036c3afb19806c40,64,t,t,f
+SYNTHORA,0x10800a5a5b9d72251566ec651e862a8b4b427de0,63,f,t,t
+API Acre,0xa0bfa4f07281c9b248dc3aed2217836bca24869b,63,f,f,t
+Open Source Vulnerability Check,0x8c128f1ee62bb5e47867cfbae2ad89be325df1b2,62,t,f,t
+Truth Bear,0x2d16a243ba9facc6ac85519d5efad2149dc4c6c3,61,f,f,t
+Otto AI,0x0e84ddedaae6a779c462c22a59f301ec31b6b808,58,t,f,f
+,0x3e7c9ca818f713f19e126e3b7b37b47dc1411570,55,f,t,t
+CRYPTYX,0x0cd2c9724f185a029101b4aeacf3f114415c394f,55,f,t,f
+BlockRun.AI,0xe9030014f5dae217d0a152f02a043567b16c1abf,52,f,t,f
+,0x6bab1d63b3b51a88c7f87402db2803b05f0ae9e9,42,f,t,f
+,0x9f7556c65392e5cbcb342010618c2b407e64a8ea,37,t,t,f
+chainquery Bitcoin RPC,0x7cf45cd775bdf31a5a96fa0a5805df0b610d87ff,29,t,f,f
+glim.sh,9mkm5ra48kfcsv9hdq8sb3c3r5hjouewgq6sp1cx1vde,28,f,t,f
+insider-radar-agent,8d5dspgrox5p9v6oghluvlfxujp6en1zydf5kttq5n8v,27,f,t,f
+,0x1f0409ccd20a2fb497d4decef4e17e9d0688fea6,27,f,f,t
+OCR Text Extractor,0xe9740820225b3918b4ddd1292c7ca4ca0e2c2f08,26,f,t,f
+LUMI,0x7eaf3c393a8996e124c0fa7ccbc55019854c4c5b,24,t,t,t
+,0xee72b902af7466023595512e3359bb5bf312977c,23,f,f,t
+Concierge Agent,0xb85c83cc448edca8eb724f5d79b523faff9375a7,22,f,t,f
+Qonoro Address Normalizer,0x40b62aa49f4a929760fb2dd0fcb0642f0aa872eb,21,f,t,t
+Vedetta,0x21e16f1bc3aa847236354c8193d0cb21cf412efa,20,f,t,f
+Apify API,0x23d931f95831cee50b5f5edf4d0e88270f6c8411,20,f,t,f
+preflight-guard,0xd617a7145ca56e3ed58d639f9dec6999b22441ee,20,t,f,t
+,0xc9b70d8d342609437bc87ec3c877911a306d3e6a,20,f,t,f
+Stock Trends Market Intelligence,0xaeeb8eabdc05532a26123045f99d208eb1cc00ab,19,f,t,f
+,0xd8b2797e90336721a69b5685d5f6a9ca52b6e8ef,18,t,t,f
+IncorpSignal company search,0x733f40a4fa0cd13d59abade04b9ed2e9acac6457,18,f,t,f
+Open Source Filings,0x72f62de8b70d6cfa8cc2df6f21f243f289f3396c,18,f,f,t
+RemoteSight Structured Extract,0x15459498e1191d8787c83177809bd54022fa18c4,17,f,t,f
+,0x0ff5a6ecef783bba35463ec2f8403b9b5e9e7c86,17,f,t,f
+,0xdc9f94a8b93f070b58cfa580cbe740d763005fe6,16,f,t,f
+Scanna,0xfca7d3b52d69b9b8371dd5765d3f294e46a4f59e,16,t,t,f
+Dicta-Notes,0x1f2a484ef654d49c58c625b09e78b538501d652d,14,f,t,f
+,0x7f74ce6d34ee0180f0217a16ce05f3b91272570f,14,f,t,f
+,0x6d91adf2c545047cbbc5b37a5f457cce081b48d3,14,f,t,f
+Text Diff,0xb86f95ef5fa904318ea9df3b59adce099b478fc4,13,f,t,f
+,0x46ba634261566cf242c853d1f49511f9268ba674,13,t,f,f
+Japan Invoice OCR,0xe4a4e5b226be71e7b6ed523bc7a91089c770572f,12,t,t,f
+,0xf080a1aab08650946acda41410a7edc14f7be035,12,f,t,f
+ApiToll DEX Volume,0x3da40a9ad36640a2c0f533bac368490095574664,11,f,t,f
+,0x1304ec1a8945365e43a5c18a734065f107b417ca,11,t,t,f
+,0x2583aac89f58a63d9ccbedaa5e3baf2196aa967e,11,f,t,f
+,0xcc73d69a4d04fa41afa3727c45140d51d71f615c,9,f,f,t
+,0x5c6b3a3dae296d3cef50fef96afc73410959a6db,9,f,t,f
+Cybercentry,0xfee13309251b632317ea2d475d6aba7e7e0219e6,9,f,f,t
+,0x74500ee8519da3b6bf43642bc06be5874a9ecc99,8,f,f,t
+OnRamperX,0x53598173ce7c26025bab0520d9e9d0c28fbcf7de,7,f,f,t
+,0x1a9fa76f5b420e85de147c4419638bebe64d6de5,7,f,t,t
+ArtifactGuard,0xf18e030a22928f2d0a26ce065ccbbdba6a8bf137,7,f,f,t
+,0x0eba5d314f4f5dcb7a094953fa9311a45172dd1b,7,f,t,f
+SentEdge SFX Gallery,0x7bebee9f4c1694e18fd9bf3bf0f113d7fb2d6bb3,7,f,t,f
+,0x79f29dade1df4889357817a797516615a918ade2,7,f,t,t
+Safety Incidents (OSHA),0x9f6c07e3f772ec49435579ec34e13141a94b9958,7,f,t,f
+,0x19a09691d0a9c4fb80cc40694704a15858c6a454,6,f,t,f
+Satellite & GeoRisk x402 API,0x0550779cfbc832657a8bb46bac9f359a5ad038b8,6,f,t,f
+,0x6ee49a7872844397fb52870cc07b308ffadc9427,6,f,t,f
+People Data Labs API,0x7f33b3c113915a0f2981070553ba9538c0f90171,6,f,t,f
+Public Data Catalog,0xe8799c2deda78ecceb329d1e8fe9f110bf55e4f8,6,t,f,f
+SchemaSure,0x9876af0f6d8ed5155cd02d1ca56d128601612690,6,f,t,f
+"Hotel Search, Rates & Reviews",0x28410eac7393dba041cd5a92eefe7a8e834310bb,6,f,f,t
+TrustAgent,0x6121654d3fd4c8b42a90d30472e4d40927c3e6bb,6,f,t,f
+Official Source Evidence,0x9500075649a70411c81f99c4314f6cff55d12579,6,f,f,t
+Scry Wallet Intelligence,ctkigv78yuerumvqm7qor8j1hmk2oxnxdhwpvrakv85d,6,f,t,t
+,0xcebbb82a183faa69b929ed1f417aafc63fa3b5b6,6,f,t,f
+,0x31220dd5ae5798cd881e913281e1989a7b91eced,6,f,t,f
+,0xbbecbe90f28632a9d52ed67b33b43767b8c89285,5,t,t,f
+,0xc87a06dee4c0e85912296002617120bbfd5ef990,5,f,t,f
+,0x93a1f57d2e0dbe4cc882b5dbaebe7f0f16443338,5,t,f,f
+DCL Evaluator,0xb790ed3796194e5511c44411cf045f67e069cdc0,5,f,t,f
+Business Change Intelligence API,0x4dbd0d9be6171c212617b8adc4d35152f9f23115,4,f,t,f
+,0x2fecabdfc849c76fdc28ca13aa0ab392753ef35c,4,t,t,f
+,0xd993eafba87cffa2ca2cff5a56ef89034575a7ef,4,f,t,f
+agent-reader,0x737426d3ed53930b889b3f61774669a0fdf3be54,4,f,t,f
+,0x7f394b1e127cbcea346979e552a4227328385b3d,4,t,f,f
+TrialBase DB,0x1ee42717b1c370dace197a8850bf41a932f3b5a8,4,f,f,t
+,0xb3e7993ed2fc2c79fff220620240f298bba9bf5b,3,f,t,f
+MimirAPI,0x40e5a6647803c2dd686049dcdc5f9c34817d7a7f,3,f,t,f
+,0xd6bcb41ffd35d8877fd9a31c7deea22e0ae2a465,3,t,f,f
+ffpipe,0x38c72cab5d8f053a7cce4f522b923c3c70291b9d,3,f,f,t
+ProposalCheck Premium,0x87f929c4ecac1556a507ce6b92ef95c52b28dba4,3,f,t,f
+,0xc1726e09aea4b9b967353b7b56890955e9e5bc2c,3,f,t,t
+,0xb3e7993ed2fc2c79fff220620240f298bba9bf5b,3,f,t,f
+,0x60c402878efcecae5733a88075328aa2320c39be,3,f,f,t
+,0x154b1006435e5cfe2206e7777c1003f9438119b1,2,t,f,f
+Maha Context Compiler,0xec84c1cd6602bbe387bc8e6f0d3c062f2762de28,2,f,f,t
+,0xc327d0aeb5f65b514b193b5e5a95cc6f4060815f,2,t,f,f
+,0x17cf15d61026b4cdd26cff6042f8e7d2e0ca5e8d,2,f,t,f
+ScrapeCheck,0x455f20ec147477cafcd6d77c1604529f3c4ff665,2,f,t,f
+invoice-extract,0xf07538b80b6959e5b8e4b5df65c73194d50fb7eb,2,f,t,f
+,0x3c423b365efb79bfb42c9ec8f6f0745195ca7745,2,f,f,t
+,0xdf0c4a88cf28e24cd63a0d2ac54052c65f0c7700,2,f,t,f
+,0xcd8975137d48ed9bfd1c299a62c01420b860070d,2,f,t,t
+561-group-ephemeris-moment,0x42f72c0a340a4a55c082fe42483e87691d2bff64,2,f,t,t
+,0x735f74ede4361788d6634925d592711463be8164,2,t,t,f
+RC Quantum Data Oracle,0x510d1c21788166b0a39f83796bf624e006849690,2,t,f,t
+Agent Preflight Edge Paywall,0xc83c478cc3c95d8913b90d6e55c7019ae6d04b43,2,t,f,f
+,0x7f985b1764f79faa42a4622bb605b23c8eb5abea,2,f,t,f
+,0x55aa118529184e3603f9d1043ebd35c87c7c4721,2,t,f,f
+,0x318a8bac69c4ec1f9e489ce223b7ce2d719bcd3b,2,f,t,f
+,0xfde7913abe6e4a4e3e3134cf050df9030ae8ef48,2,f,f,t
+,0x8de52660283bc250f271f2c65e82d672baffa3c1,2,f,t,f
+,0x9017de667f3835b3a7cb2d50013f65fc3d408bbe,2,f,t,f
+Wikipedia Article Summary,0x6a706d6fcf192c15fb592d7502258ed41425dd36,1,f,f,t
+SourceLens,0x1480d7a7a299576b45d1793ec8fb1e68361045b0,1,f,t,f
+Sports Predictor,0x11a5a9ee3fffd4d8cbb2b3c5e02acaa268486b67,1,f,t,f
+A2A Artifact Handoff,0xd89e4277d9669e580eaa652b4b714793afe7b3e6,1,f,t,f
+A2A Artifact Handoff,0xd89e4277d9669e580eaa652b4b714793afe7b3e6,1,f,t,f
+,0x1357bef96ec515d250137d7eb712f0395eb5142d,1,t,t,f
+,0x0093406a8805adf3b397c28366402aad9163afda,1,t,f,f
+,0x8d32c6a3ee3fb8a8b4c5378f7c5a26cc320a853f,1,f,t,f
+Agent Economy Lab,0x69948186638b5a5b3f62f2563ec88bf0ea7d73f5,1,f,t,t
+,0x1ddf747975c4ebeaf48e14a5110f7eab6b0807f2,1,f,t,f
+,0x22b3d4485c8dcd8fc4840a7570664747c9055530,1,f,t,f
+"Actor, API & Scraper Monitor",0x7ccb91a3ad4c45097bda4c3c29d2cc89fa93ab36,1,t,f,f
+commodities.sh,0x0d4ee4e945601865e3a5bc5a188e4a9cf23c00d5,1,t,f,f
+VerityLayer,0x89d38023167bda453bed9f6cbf22ddd1ec5f70a7,1,f,t,f
+,0xbf11e11ab3607ae7f1c51b79fd0e585c0cca4b82,1,t,t,f
+ZoningVerdict,0xc1dab3c368f8b6595c49df67f4a17225e0ceb785,1,f,f,t
+WalletTriage,0x93835cf2bd459e72b577ed944e33578d8529dacc,1,f,f,t
+Context Relay,0x08b11ea90aeb253ef0f954be108a12e6783d8189,1,t,f,f
+x402 Entity-ID Resolver,0x5fa62365201ad373754c0a5cee69aa6167164a16,1,f,t,f
+BoundaryEvidenceCatalogue,0xb15467515f50da36ba249b1db2e4805f770f5510,1,t,f,f
