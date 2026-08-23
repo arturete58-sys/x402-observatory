@@ -255,3 +255,7 @@ Ingested 22 August 2026 from the CDP Bazaar and Binance B402 public discovery en
 
 - 01 - Ecosystem census (this document)
 - 02 - [Providers declare shape, not quality](report-02-quality-declaration.md)
+
+## Related
+
+- [x402-declarations](https://github.com/arturete58-sys/x402-declarations) - library that normalises quality declarations across providers.
