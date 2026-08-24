@@ -263,3 +263,8 @@ Ingested 22 August 2026 from the CDP Bazaar and Binance B402 public discovery en
 
 
 
+- 03 - [Who actually pays on x402](report-03-who-pays.md)
+
+## Specification draft
+
+- [Delivery Declaration Extension (v0.1, draft)](SPECIFICATION.md)
