@@ -259,10 +259,7 @@ Ingested 22 August 2026 from the CDP Bazaar and Binance B402 public discovery en
 ## Related
 
 - [x402-declarations](https://github.com/arturete58-sys/x402-declarations) - library that normalises quality declarations across providers.
-- 03 - [Who actually pays on x402](report-03-who-pays.md): one wallet, 92.7% of transactions.
 
 
 
-## Specification draft
 
-- [Delivery Declaration Extension (v0.1, draft)](SPECIFICATION.md)
