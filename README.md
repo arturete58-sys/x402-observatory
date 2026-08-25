@@ -268,3 +268,7 @@ Ingested 22 August 2026 from the CDP Bazaar and Binance B402 public discovery en
 ## Specification draft
 
 - [Delivery Declaration Extension (v0.1, draft)](SPECIFICATION.md)
+
+## Corrections
+
+- [Correction 01 — chain distribution](CORRECTION-01-chains.md): Solana was understated 27x; multi-chain resources were attributed to Base.
