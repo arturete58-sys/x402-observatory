@@ -282,17 +282,46 @@ is `attestor.pub` in this repository.
 
 ```json
 {
-  "v": 1,
-  "endpoint": "https://...",
-  "observedAt": "2026-08-26T07:39:08Z",
+  "v": 2,
+  "endpoint": "https://vibesprings.net/api/price/eth-usd",
+  "observedAt": "2026-08-26T09:41:12Z",
   "payloadHash": "sha256:...",
-  "declared": { ... },
-  "observed": { "ageSeconds": 4470 },
-  "verdict": { "failureCode": "F3", "providerAtFault": true },
+  "declared":   { "...": "provider's own metadata, as sent" },
+  "normalized": {
+    "declaration": { "freshness": {...}, "quality": {...}, "provenance": {...} },
+    "evaluation":  { "usable": true, "providerAtFault": false, "codes": [] }
+  },
+  "observed": {
+    "vendorValue": 2461.09,
+    "referenceValue": 2461.59,
+    "referenceSources": [
+      { "fuente": "coinbase",  "precio": 2461.59 },
+      { "fuente": "kraken",    "precio": 2461.26 },
+      { "fuente": "defillama", "precio": 2462.49 }
+    ],
+    "deviation": 0.0203,
+    "threshold": "0.50",
+    "referenceLagMs": 170
+  },
+  "verdict": { "failureCode": null, "providerAtFault": false },
   "attestor": "ed25519:...",
   "sig": "..."
 }
 ```
+
+**Format v2 is designed to be recomputable by a third party.** It carries the
+value the vendor returned, the reference it was compared against with every
+source used, the milliseconds between the two queries, and the threshold in
+force. Anyone holding the attestation can re-derive the verdict without access
+to this database.
+
+`normalized` contains the provider's own declaration translated into a common
+schema via [x402-declarations](https://github.com/arturete58-sys/x402-declarations),
+so an attestation can be read without knowing any individual provider's field
+names. It is `null` for providers with no adapter yet.
+
+v1 attestations remain verifiable against their own contents but lack the
+reproducibility fields.
 
 Signature covers a canonical serialisation of every field except `attestor`
 and `sig` — keys sorted, no whitespace. Verify with Ed25519 against the
