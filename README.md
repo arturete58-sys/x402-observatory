@@ -272,3 +272,36 @@ Ingested 22 August 2026 from the CDP Bazaar and Binance B402 public discovery en
 ## Corrections
 
 - [Correction 01 — chain distribution](CORRECTION-01-chains.md): Solana was understated 27x; multi-chain resources were attributed to Base.
+
+---
+
+## Verifying attestations
+
+Every delivery observation is emitted as a signed attestation. The public key
+is `attestor.pub` in this repository.
+
+```json
+{
+  "v": 1,
+  "endpoint": "https://...",
+  "observedAt": "2026-08-26T07:39:08Z",
+  "payloadHash": "sha256:...",
+  "declared": { ... },
+  "observed": { "ageSeconds": 4470 },
+  "verdict": { "failureCode": "F3", "providerAtFault": true },
+  "attestor": "ed25519:...",
+  "sig": "..."
+}
+```
+
+Signature covers a canonical serialisation of every field except `attestor`
+and `sig` — keys sorted, no whitespace. Verify with Ed25519 against the
+published key.
+
+The format is stable by design: it is emitted by a single observer today and
+takes additional signers without changing shape.
+
+**What a signature proves:** that this observation was made by this observer,
+at this time, and has not been altered. It does not prove the observation was
+correct — that is what the published methodology, the raw data and the ruleset
+change log are for.
