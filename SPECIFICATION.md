@@ -28,6 +28,23 @@ A survey of the complete x402 discovery catalogue (15,182 active resources, 1,23
 
 That last row is the reason for this document.
 
+### 1.0 Why this matters now
+
+x402 is no longer a single-vendor protocol. It is governed by the Linux
+Foundation and backed by more than twenty organisations including Visa,
+Mastercard, Stripe, Shopify, AWS and Anthropic. Wallet products aimed at
+non-technical consumers now ship with x402 support built in.
+
+That changes the cost of an undeclared delivery failure. A stale price feed
+at $0.001 is an inconvenience. As agent-initiated payments extend toward
+goods, bookings and services with real-world fulfilment, a response that
+returns HTTP 200 while the underlying delivery failed becomes materially
+expensive — and there is currently no field in the protocol to express that
+the payload should not be relied upon.
+
+The vocabulary proposed here is cheap to adopt while the ecosystem is small.
+It becomes much harder to introduce once integrations are numerous.
+
 ### 1.1 Declaration exists; commitment does not
 
 91 providers declare something about their data — freshness, confidence, provenance. They declare **observed values**: this response is 408 seconds old, this figure has 0.99 confidence, this record traces to EIA-930.
