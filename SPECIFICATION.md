@@ -201,49 +201,6 @@ It exists because the situation already occurs and has no expression. A provider
 
 A conforming agent that receives `usable: false` SHOULD discard the payload regardless of its shape.
 
-### 3.3.1 What a settlement layer does with it
-
-The field is only useful if something acts on it, and what that something can
-do depends on the billing model. Contributed by Fermah, who are building an
-account layer behind an x402 facilitator:
-
-| Billing model | Action on `usable: false` |
-|---|---|
-| Running balance | Skip the debit, or credit it back |
-| Subscription | Pause the next charge until the provider is usable again |
-| Per-request settlement | No recourse — the payment has already settled |
-
-That third row is worth stating plainly: **with per-request settlement,
-`usable: false` cannot do anything.** The money is gone before the flag is
-read. The declaration only acquires teeth where there is a balance to credit
-against or a charge to pause.
-
-### 3.3.2 Two scales of response
-
-A single `usable: false` is a local event, handled per call as above.
-
-A provider that emits it repeatedly is a different problem, and the response
-is not a refund — it is a decision to stop offering that provider. That is a
-commercial judgement, not an accounting one.
-
-The two differ in what they require:
-
-| | Per-call | Systematic |
-|---|---|---|
-| Signal source | In-band, from the response | Accumulated history |
-| Who can compute it | Facilitator or settlement layer | Requires continuous independent observation |
-| Latency | Immediate | Deliberately slow — needs sample |
-| Response | Skip or credit the charge | Stop selling the provider |
-
-**This specification covers the per-call declaration only.** The aggregate
-signal is out of scope, as enforcement is, and is mentioned here because it
-constrains what an implementer should retain:
-
-> An implementation that reads `usable` per call but does not retain the
-> history cannot reconstruct the systematic signal afterwards. Retaining the
-> flag, the timestamp and the endpoint is enough; the aggregation itself can
-> be done by any party holding that record.
-
 ### 3.4 Conformance
 
 A provider is **partially conforming** if it emits `extensions.delivery` in the 200 response with at least one field using the names and units defined here.
