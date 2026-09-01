@@ -334,3 +334,4 @@ takes additional signers without changing shape.
 at this time, and has not been altered. It does not prove the observation was
 correct — that is what the published methodology, the raw data and the ruleset
 change log are for.
+- 04 - [Four chains, one method](report-04-four-chains.md): first comparable multi-chain measurement.
