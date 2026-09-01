@@ -28,23 +28,6 @@ A survey of the complete x402 discovery catalogue (15,182 active resources, 1,23
 
 That last row is the reason for this document.
 
-### 1.0 Why this matters now
-
-x402 is no longer a single-vendor protocol. It is governed by the Linux
-Foundation and backed by more than twenty organisations including Visa,
-Mastercard, Stripe, Shopify, AWS and Anthropic. Wallet products aimed at
-non-technical consumers now ship with x402 support built in.
-
-That changes the cost of an undeclared delivery failure. A stale price feed
-at $0.001 is an inconvenience. As agent-initiated payments extend toward
-goods, bookings and services with real-world fulfilment, a response that
-returns HTTP 200 while the underlying delivery failed becomes materially
-expensive — and there is currently no field in the protocol to express that
-the payload should not be relied upon.
-
-The vocabulary proposed here is cheap to adopt while the ecosystem is small.
-It becomes much harder to introduce once integrations are numerous.
-
 ### 1.1 Declaration exists; commitment does not
 
 91 providers declare something about their data — freshness, confidence, provenance. They declare **observed values**: this response is 408 seconds old, this figure has 0.99 confidence, this record traces to EIA-930.
@@ -217,6 +200,49 @@ The single most useful field in this proposal, and the one with no current equiv
 It exists because the situation already occurs and has no expression. A provider whose upstream sources have failed has three options today: return an error and lose the sale, return degraded data silently, or return degraded data with a label nothing reads. All three are bad. This field makes the third one work.
 
 A conforming agent that receives `usable: false` SHOULD discard the payload regardless of its shape.
+
+### 3.3.1 What a settlement layer does with it
+
+The field is only useful if something acts on it, and what that something can
+do depends on the billing model. Contributed by Fermah, who are building an
+account layer behind an x402 facilitator:
+
+| Billing model | Action on `usable: false` |
+|---|---|
+| Running balance | Skip the debit, or credit it back |
+| Subscription | Pause the next charge until the provider is usable again |
+| Per-request settlement | No recourse — the payment has already settled |
+
+That third row is worth stating plainly: **with per-request settlement,
+`usable: false` cannot do anything.** The money is gone before the flag is
+read. The declaration only acquires teeth where there is a balance to credit
+against or a charge to pause.
+
+### 3.3.2 Two scales of response
+
+A single `usable: false` is a local event, handled per call as above.
+
+A provider that emits it repeatedly is a different problem, and the response
+is not a refund — it is a decision to stop offering that provider. That is a
+commercial judgement, not an accounting one.
+
+The two differ in what they require:
+
+| | Per-call | Systematic |
+|---|---|---|
+| Signal source | In-band, from the response | Accumulated history |
+| Who can compute it | Facilitator or settlement layer | Requires continuous independent observation |
+| Latency | Immediate | Deliberately slow — needs sample |
+| Response | Skip or credit the charge | Stop selling the provider |
+
+**This specification covers the per-call declaration only.** The aggregate
+signal is out of scope, as enforcement is, and is mentioned here because it
+constrains what an implementer should retain:
+
+> An implementation that reads `usable` per call but does not retain the
+> history cannot reconstruct the systematic signal afterwards. Retaining the
+> flag, the timestamp and the endpoint is enough; the aggregation itself can
+> be done by any party holding that record.
 
 ### 3.4 Conformance
 
