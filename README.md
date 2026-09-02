@@ -22,7 +22,7 @@ Four chains, one method. Raw data published with SHA-256 hashes, every observati
 
 ## Reports
 
-- **[01 — Ecosystem census](report-01-census.md)**: 15,034 resources map to 1,178 real providers when counted by recipient address rather than endpoint.
+- **[01 — Ecosystem census](README.md)**: 15,034 resources map to 1,178 real providers when counted by recipient address rather than endpoint.
 - **[02 — Providers declare shape, not quality](report-02-quality-declaration.md)**: 99.84% of resources declare the shape of their response; 7.40% of providers declare anything about its quality. Among the 91 that do, all seven possible combinations appear. No convention exists.
 - **[03 — Who actually pays](report-03-who-pays.md)**: 8,065,305 payments on Base over 30 days. One wallet accounted for 92.7% of transactions. 52.2% of payers made a single payment and did not return.
 - **[04 — Four chains, one method](report-04-four-chains.md)**: XRPL settles 5.8× more transactions than Base at 0.6% of the value. Transaction counts and settled value describe different chains.
@@ -106,3 +106,7 @@ Any provider named in any report is contacted before publication and may submit 
 Issues and corrections: [GitHub issues](https://github.com/arturete58-sys/x402-observatory/issues)
 
 If any figure here is wrong, saying so is useful. It has happened before and the correction was published.
+
+## Incident notes
+
+- [2026-08-29 — 48 hours of dead upstream sources on a paid FX feed](incident-2026-08-29-fx-feed.md)
