@@ -110,3 +110,4 @@ If any figure here is wrong, saying so is useful. It has happened before and the
 ## Incident notes
 
 - [2026-08-29 — 48 hours of dead upstream sources on a paid FX feed](incident-2026-08-29-fx-feed.md)
+- [Correction 02 — concentration measured from one side only](CORRECTION-02-concentration.md): recipient-side concentration exceeds payer-side on all four chains.
