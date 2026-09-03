@@ -22,7 +22,7 @@ Four chains, one method. Raw data published with SHA-256 hashes, every observati
 
 ## Reports
 
-- **[01 — Ecosystem census](README.md)**: 15,034 resources map to 1,178 real providers when counted by recipient address rather than endpoint.
+- **[01 — Ecosystem census](report-01-census.md)**: 15,034 resources map to 1,178 real providers when counted by recipient address rather than endpoint.
 - **[02 — Providers declare shape, not quality](report-02-quality-declaration.md)**: 99.84% of resources declare the shape of their response; 7.40% of providers declare anything about its quality. Among the 91 that do, all seven possible combinations appear. No convention exists.
 - **[03 — Who actually pays](report-03-who-pays.md)**: 8,065,305 payments on Base over 30 days. One wallet accounted for 92.7% of transactions. 52.2% of payers made a single payment and did not return.
 - **[04 — Four chains, one method](report-04-four-chains.md)**: XRPL settles 5.8× more transactions than Base at 0.6% of the value. Transaction counts and settled value describe different chains.
@@ -69,7 +69,7 @@ Preview quality: HTTP only, rate limited to 60 requests per IP per 5 minutes. No
 
 **Everything is reproducible.** Block ranges, ledger ranges, thresholds and criteria are published. All four chains are indexed from public endpoints requiring no authentication.
 
-**The observation table is append-only.** A database rule prevents modification of historical records. When a rule changes, the change is logged with its reason and the observations it invalidates — 12 such changes so far.
+**The observation table is append-only.** A database rule prevents modification of historical records. When a rule changes, the change is logged with its reason and an explicit scope declaring which observations it invalidates. Until 3 September that scope was inferred from the reason text and mostly did not apply; see [Correction 07](CORRECTION-07-ruleset-log.md).
 
 **Local canaries** with known-bad behaviour run alongside the real panel, so a silent failure of the instrument itself is detectable.
 
@@ -79,17 +79,29 @@ Preview quality: HTTP only, rate limited to 60 requests per IP per 5 minutes. No
 
 ## Corrections, and why they are here
 
-Five figures published in these reports were later found wrong and corrected in public:
+Figures published in these reports that were later found wrong and corrected in public.
+Numbers are stable identifiers, not chronological order.
 
-| Reported | Corrected to | Found by |
-|---|---|---|
-| Solana: 191 resources | 5,246 | Internal review |
-| 11.1% of providers declare quality | 7.40% | Internal review |
-| Stellar volume for one provider: 10.77 USDC | 31.5412 USDC | **The provider** |
+| # | Published | Reported | Corrected to | Found by |
+|---|---|---|---|---|
+| 1 | 2026-08-22 | Not published as a figure | 1.12 root domains per provider | Internal review |
+| [2](CORRECTION-01-chains.md) | 2026-08-25 | Solana 191 resources; XRPL 0; Stellar 1 | Solana 5,246; XRPL 737; Stellar 140 | Internal review |
+| 3 | 2026-08-23 | 11.1% of providers declare quality | 7.40% | Internal review |
+| 4 | 2026-09-01 | Stellar volume for one provider: 10.77 USDC | 31.5412 USDC | **The provider** |
+| 5 | 2026-09-01 | One wallet: 92.7% of Base transactions | Holds for the 30-day window; 21.9% over the last seven days | Internal review |
+| [6](CORRECTION-02-concentration.md) | 2026-09-02 | XRPL: largest payer 1.3%, described as the most evenly distributed chain | Largest recipient 74.6%; the most concentrated of the four by recipient | Internal review |
+| [7](CORRECTION-07-ruleset-log.md) | 2026-09-03 | 12 logged ruleset changes, each with the observations it invalidates | 15 distinct changes; 12 of them had no effect. No published figure changes. | Internal review |
 
-That last row matters most. A Stellar provider sent their own figures, which did not match. The defect was a 1 USDC filter discarding 63% of their volume — and it affected every Stellar figure published up to that point. After the fix, the numbers match theirs exactly.
+6 corrections to published figures, 1 found by the provider measured.
+Entry 1 corrected an error caught before publication; it is listed for continuity of numbering.
+
+Correction 4 matters most. A Stellar provider sent their own figures, which did not match. The defect was a 1 USDC filter discarding 63% of their volume — and it affected every Stellar figure published up to that point. After the fix, the numbers match theirs exactly.
+
+This table is generated from the correction register, not maintained by hand.
 
 Sixteen further findings were discarded before publication because they did not survive checking.
+
+Not every correction has its own file. Those without a link above are documented inside the report they correct.
 
 A measurement project that hides its own errors is not measuring anything.
 
@@ -110,4 +122,3 @@ If any figure here is wrong, saying so is useful. It has happened before and the
 ## Incident notes
 
 - [2026-08-29 — 48 hours of dead upstream sources on a paid FX feed](incident-2026-08-29-fx-feed.md)
-- [Correction 02 — concentration measured from one side only](CORRECTION-02-concentration.md): recipient-side concentration exceeds payer-side on all four chains.

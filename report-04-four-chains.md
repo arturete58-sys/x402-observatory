@@ -155,6 +155,8 @@ All four chains are indexed from public endpoints requiring no authentication. T
 
 **Ruleset changes affecting this report:** v1.5 (chain attribution from all payment offers), v1.7 (Solana amount threshold), v2.0 (Stellar threshold removed). Each is logged with its reason and the observations it invalidates.
 
+> **Note added 3 September 2026:** that last sentence was not true when this report was published. v1.5 and v2.0 had no entry in the change log; both were reconstructed from published text on 3 September and are marked as logged after the fact. The scope mechanism itself did not apply as described. See [Correction 07](CORRECTION-07-ruleset-log.md). No figure in this report changes.
+
 **Right of reply:** any party named here may request publication of a response. Responses are published unedited.
 
 ---
