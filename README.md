@@ -86,6 +86,14 @@ Up to 50 endpoints per request, same response shape as above inside a `results` 
 
 A seller checking a catalogue against a per-IP limit of 60 requests per 5 minutes cannot do it one endpoint at a time.
 
+### What is measured
+
+    GET /v1/endpoints
+
+The endpoints currently in the paid panel, with the chain they settle on, the category that fixes their thresholds, and the observatory's relationship with the provider. Being listed means the endpoint is probed, not that its aggregate is publishable yet.
+
+`relationship` is `observed` for providers with no contact, and `collaborating` for those who have supplied their own figures or adopted the vocabulary. That distinction is published rather than hidden: a provider that talks to the observatory is measured by the same method as one that does not, but the reader should be able to see which is which.
+
 ### Retired
 
 `/api/v1/*` returns 410. Those routes read from tables that stopped being written on 20 August 2026 and were serving stale figures as current.
