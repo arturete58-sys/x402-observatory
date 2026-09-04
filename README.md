@@ -29,6 +29,8 @@ Four chains, one method. Raw data published with SHA-256 hashes, every observati
 
 - **[05 — What the ecosystem figures are counting](report-05-what-the-figures-count.md)**: one payer accounts for 91% of all payments indexed on Base and pays a single recipient. Underneath, a flat market of around 570 buyers a week who purchase from more than one provider.
 
+- **[06 — Leaving the catalogue is not dying](report-06-leaving-the-catalogue.md)**: 4,742 resources left the catalogue in 17 days, from 509 providers. 80.8% of a sample still answer and still charge. The catalogue counts who is willing to stay listed, not what exists.
+
 - **[XRPL index](XRPL-INDEX.md)**: 106 addresses receiving x402 payments on the XRP Ledger. Not one resolves to a service through any public route. Addresses can be claimed with a signature, verifiable by anyone with [`verify-claim.js`](verify-claim.js).
 
 **[Corrections](CORRECTION-01-chains.md)** are published in full, including the figures that were more flattering before they were wrong.

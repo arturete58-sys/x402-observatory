@@ -1,0 +1,722 @@
+[
+ {
+  "url": "https://api.socialfetch.dev/v1/facebook/posts",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.delx.ai/api/v1/x402/roman-to-int",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://402utils.com/v1/country-info",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.delx.ai/api/v1/x402/pad-string",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.24klabs.ai/api/timestamp-convert",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://autonomy-api-network.onrender.com/v1/image-inspect",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.delx.ai/api/v1/x402/age-years",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://retrynet-bazaar-stage.jack-labs.workers.dev/repair",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://k2so-8080.on.ascii.dev/api/services/agent-side-cost-evaluation-and-payment-runtime-d",
+  "method": "GET",
+  "code": 404,
+  "est": "no_existe"
+ },
+ {
+  "url": "https://travelpulse.theaslangroupllc.com/api/travel/budget",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://proxy.suverse.io/v1/data/suverse-ta-rsi",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.delx.ai/api/v1/x402/json-to-csv",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.delx.ai/api/v1/x402/domain-from-url",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.interzoid.com/getcompetitoranalysis",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://apiwitchcraft.duckdns.org/vat/:country",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.strale.io/x402/german-company-data",
+  "method": "GET",
+  "code": 404,
+  "est": "no_existe"
+ },
+ {
+  "url": "https://k2so.wrong.systems/api/services/agent-dispute-evidence-retention-lifecycle-how-l",
+  "method": "GET",
+  "code": null,
+  "est": "sin_respuesta"
+ },
+ {
+  "url": "https://library.forgemesh.io/english-wit-and-humor-periodicals",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://library.forgemesh.io/married-people-fiction",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://x402.devvizion.com/v0/brief",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://proxy.suverse.io/v1/data/fiat-exchange-rates",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://x402.orthogonal.com/scrapecreators/v1/truthsocial/profile",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://k2so-8080.on.ascii.dev/api/services/agent-to-agent-dispute-settlement-ladder-escalat",
+  "method": "GET",
+  "code": 404,
+  "est": "no_existe"
+ },
+ {
+  "url": "https://api.socialfetch.dev/v1/twitch/profiles/:handle/schedule",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.gocreativeai.com/v1/signal/funding-radar/:var1",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.24klabs.ai/api/v1/eth-unit-convert",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://www.robbiegeorgephotography.com/x402/yellowstone-thermal-registry.json",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://cryptyx.ai/api/asset/regime-context",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.webbersites.com/api/dns",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://marine.x402.press/marine/ask",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.interzoid.com/getnearestcoffeeshops",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://x402stock.vercel.app/api/v1/losers",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api-v3qhpbwutp.august.services/v1/web-extract",
+  "method": "POST",
+  "code": null,
+  "est": "sin_respuesta"
+ },
+ {
+  "url": "https://api.invoket.com/medication/interactions",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://x402.dailyelo.com/v1/reliability/broken",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://x402stock.xyz/api/v1/portfolio/xray",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://www.stratalize.com/api/x402/property-tax-benchmark",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://etherealgoodsco.store/finance/crypto-market",
+  "method": "POST",
+  "code": null,
+  "est": "sin_respuesta"
+ },
+ {
+  "url": "https://x402.forgemesh.io/daily",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://k2so.wrong.systems/api/services/agent-to-agent-dispute-settlement-ladder-escalat",
+  "method": "GET",
+  "code": null,
+  "est": "sin_respuesta"
+ },
+ {
+  "url": "https://x402.tickerlayer.com/v1/commodities/agg/:symbol/prev",
+  "method": "GET",
+  "code": 404,
+  "est": "no_existe"
+ },
+ {
+  "url": "https://api.tcgapi.dev/v1/cards/tcgplayer/475980",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.24klabs.ai/api/case-convert",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://www.paylog.dev/api/v1/x402/report",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://x402.professorsausages.com/domain-intel/domain/:domain",
+  "method": "GET",
+  "code": 400,
+  "est": "otro"
+ },
+ {
+  "url": "https://www.robbiegeorgephotography.com/x402/soil-systems-map.json",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://proxy.suverse.io/v1/data/suverse-l2beat-scaling-summary",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://x402-utils.558686.xyz/v1/tools/json-normalize",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://2s.io/api/business/fi-companies",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://library.forgemesh.io/triangles-interpersonal-relations-fiction",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.x402.printmoneylab.com/api/v1/services/:service_id/wash-detail",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://graphadvocate.com/hyperliquid/pnl",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.x-402.online/v1/llm",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://k2so.wrong.systems/api/services/generated-video-deliverable-acceptance-decision",
+  "method": "GET",
+  "code": null,
+  "est": "sin_respuesta"
+ },
+ {
+  "url": "https://k2so.wrong.systems/api/services/agent-facing-decision-procedure-for-procuring-ai",
+  "method": "GET",
+  "code": null,
+  "est": "sin_respuesta"
+ },
+ {
+  "url": "https://x402.professorsausages.com/token-safety/check/:chain/:address",
+  "method": "GET",
+  "code": 400,
+  "est": "otro"
+ },
+ {
+  "url": "https://api.delx.ai/api/v1/x402/sitemap-probe",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://www.stratalize.com/api/x402/irs-990-intelligence",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.socialfetch.dev/v1/twitter/profiles/:handle/tweets",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://agent-fact-receipts-staging.131313122.workers.dev/v1/price-corridor",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://proxy.suverse.io/v1/data/suverse-defi-tvl-chain",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://red-breeze-8b8c.keenanbooker83.workers.dev/generate-research-questions",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://store.cryptotradecalc.com/api/sec-filing-brief",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.arkm.com/x402/intelligence/tags/updates",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://www.robbiegeorgephotography.com/x402/plate-registry.json",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.24klabs.ai/api/v1/semver-tools",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.24klabs.ai/api/v1/slugify",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://mart402.com/v1/ocr",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://toolbelt402.tpoborne.workers.dev/time/math",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://agentreeve.com/api/watch",
+  "method": "POST",
+  "code": 503,
+  "est": "otro"
+ },
+ {
+  "url": "https://stabletravel.dev/api/flightaware/flights/AT973",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://rotaryagency.uk/api/free/ddg",
+  "method": "GET",
+  "code": 404,
+  "est": "no_existe"
+ },
+ {
+  "url": "https://rpc.nodeflare.app/data/wallet-report/x402",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://dns.x402tools.xyz/v1/lookup",
+  "method": "GET",
+  "code": null,
+  "est": "sin_respuesta"
+ },
+ {
+  "url": "https://hl-funding.api.klymax402.com/api/history",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://library.forgemesh.io/life-on-other-planets-fiction",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://groundcheck.seiche.info/check",
+  "method": "POST",
+  "code": 422,
+  "est": "otro"
+ },
+ {
+  "url": "https://api.tcgapi.dev/v1/sets/100001/cards",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.agentfeeds.jp/v1/geo/shelters/nearby",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://x402-seller.onrender.com/census/demographics",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://three.ws/api/x402/skill-marketplace",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://eltociear-tokenguard.hf.space/dev/models",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://x402.professorsausages.com/swap-quote/quote/:chain/:tokenIn/:tokenOut",
+  "method": "GET",
+  "code": 400,
+  "est": "otro"
+ },
+ {
+  "url": "https://focxle.com/api/v1/x402/resource/agent-directory-search",
+  "method": "GET",
+  "code": 200,
+  "est": "sirve_sin_pago"
+ },
+ {
+  "url": "https://vibesprings.net/api/forecast",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.24klabs.ai/api/v1/llm-token-estimate",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://agent402.co.uk/v1/validate/eth-address",
+  "method": "POST",
+  "code": null,
+  "est": "sin_respuesta"
+ },
+ {
+  "url": "https://api.tantra-authority.com/api/x402/reading-sovereign",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://stabletravel.dev/api/flightaware/airports/id/delays",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://atq6wtkp6k.execute-api.us-east-1.amazonaws.com/prod/v1/payg/scan-file",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://stableestate.dev/api/properties/2204-Hill-St,-Bastrop,-TX-78602",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.delx.ai/api/v1/x402/pricing-page-extract",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://handle-strategies.vercel.app/report",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://gateway.apiosk.com/ipstack/134.201.250.155",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://fitpulse.theaslangroupllc.com/api/fit/workout",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://numberintel.dev/v1/number",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://ozmium.org/v1/loan/analysis/:address",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.agentcamo.xyz/sessions",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://k2so-8080.on.ascii.dev/api/services/agent-data-storage-tier-selection-procedure-dete",
+  "method": "GET",
+  "code": 404,
+  "est": "no_existe"
+ },
+ {
+  "url": "https://library.forgemesh.io/drugs-alcohol-pharmacology",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://2s.io/api/news/hn-user",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://mcp.barker.money/barker_executable_pools",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://rpc.nodeflare.app/data/token-safety/x402",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://autonomy-api-network.onrender.com/v1/csv-inspect",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://library.forgemesh.io/folklore",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.trialbase-db.org/v1/trials",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://brasil-dados-api.onrender.com/cpf/:var1",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://api.x402node.dev/aviation/flight-status",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://library.forgemesh.io/british-literature",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://agentdata-api.sander-van-aard.workers.dev/crypto/evidence",
+  "method": "POST",
+  "code": 400,
+  "est": "otro"
+ },
+ {
+  "url": "https://eltociear-tokenguard.hf.space/pendle",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://openwebninja-x402.vercel.app/api/play-store-apps/top-free-apps",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://x402.professorsausages.com/ens-resolve/name/:name",
+  "method": "GET",
+  "code": 400,
+  "est": "otro"
+ },
+ {
+  "url": "https://k2so-8080.on.ascii.dev/api/services/algorand-counterparty-wallet-account-state-risk",
+  "method": "GET",
+  "code": 404,
+  "est": "no_existe"
+ },
+ {
+  "url": "https://api.interzoid.com/getrecentnews",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://time.24klabs.ai/summary",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://rotaryagency.uk/api/free/holidays",
+  "method": "GET",
+  "code": 404,
+  "est": "no_existe"
+ },
+ {
+  "url": "https://api.arkm.com/x402/loans/address",
+  "method": "POST",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://euroref.dev/v1/:country/:series/history",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ },
+ {
+  "url": "https://x402-stock-indicators.vercel.app/dividends/:ticker",
+  "method": "GET",
+  "code": 402,
+  "est": "pide_pago"
+ }
+]
