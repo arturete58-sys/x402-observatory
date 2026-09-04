@@ -61,6 +61,22 @@ GET /v1/provider?endpoint=<url>
 
 Returns the signed aggregate for a provider: `n`, fault rate, Wilson interval, window, the hash of the exact attestation set aggregated, and the signature.
 
+**Three states, not two.** A provider needs weeks of probing to reach n=100. Returning nothing until then is a gap, so the response distinguishes what is publishable from what is merely actionable:
+
+| `status` | `confidence` | Condition | What it supports |
+|---|---|---|---|
+| `published` | `established` | n ≥ 100 | A figure that can be cited |
+| `provisional` | `low` | 20 ≤ n < 100 | A conservative policy, not publication |
+| `insufficient_data` | `none` | n < 20 | Nothing yet |
+
+`faultRateUpperBound` is returned in all three states, including the last. It is the upper bound of the Wilson interval: **the worst fault rate consistent with what has been observed, at 95% confidence.** It is not an estimate of the provider's fault rate and must not be quoted as one.
+
+Its use is a ceiling. A seller can hold anything above a chosen bound while the provider is still new, and revisit once the sample is established. `faultsObserved` and `n` are returned alongside so the caller can see what the bound rests on.
+
+Two providers currently sit at n=34: one with zero faults and a bound of 10.2%, one with five faults and a bound of 30.1%. Under the previous response both were `insufficient_data` and indistinguishable.
+
+The threshold of 20 is where the interval starts to constrain anything. Below it the bound exceeds 20% even with a clean record, which rules out nothing.
+
 Preview quality: HTTP only, rate limited to 60 requests per IP per 5 minutes. Not yet suitable for production.
 
 ---
