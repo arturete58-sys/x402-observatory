@@ -27,6 +27,8 @@ Four chains, one method. Raw data published with SHA-256 hashes, every observati
 - **[03 — Who actually pays](report-03-who-pays.md)**: 8,065,305 payments on Base over 30 days. One wallet accounted for 92.7% of transactions. 52.2% of payers made a single payment and did not return.
 - **[04 — Four chains, one method](report-04-four-chains.md)**: XRPL settles 5.8× more transactions than Base at 0.6% of the value. Transaction counts and settled value describe different chains.
 
+- **[XRPL index](XRPL-INDEX.md)**: 106 addresses receiving x402 payments on the XRP Ledger. Not one resolves to a service through any public route. Addresses can be claimed with a signature, verifiable by anyone with [`verify-claim.js`](verify-claim.js).
+
 **[Corrections](CORRECTION-01-chains.md)** are published in full, including the figures that were more flattering before they were wrong.
 
 ---
