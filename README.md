@@ -25,7 +25,9 @@ Four chains, one method. Raw data published with SHA-256 hashes, every observati
 - **[01 — Ecosystem census](report-01-census.md)**: 15,034 resources map to 1,178 real providers when counted by recipient address rather than endpoint.
 - **[02 — Providers declare shape, not quality](report-02-quality-declaration.md)**: 99.84% of resources declare the shape of their response; 7.40% of providers declare anything about its quality. Among the 91 that do, all seven possible combinations appear. No convention exists.
 - **[03 — Who actually pays](report-03-who-pays.md)**: 8,065,305 payments on Base over 30 days. One wallet accounted for 92.7% of transactions. 52.2% of payers made a single payment and did not return.
-- **[04 — Four chains, one method](report-04-four-chains.md)**: XRPL settles 5.8× more transactions than Base at 0.6% of the value. Transaction counts and settled value describe different chains.
+- **[04 — Four chains, one method](report-04-four-chains.md)**: four chains indexed with their criteria declared. **Its main table is withdrawn** pending recomputation — see [Correction 08](CORRECTION-08-report-04-figures.md). The finding that transaction counts and settled value describe different chains may survive; the figures supporting it do not reproduce.
+
+- **[05 — What the ecosystem figures are counting](report-05-what-the-figures-count.md)**: one payer accounts for 91% of all payments indexed on Base and pays a single recipient. Underneath, a flat market of around 570 buyers a week who purchase from more than one provider.
 
 - **[XRPL index](XRPL-INDEX.md)**: 106 addresses receiving x402 payments on the XRP Ledger. Not one resolves to a service through any public route. Addresses can be claimed with a signature, verifiable by anyone with [`verify-claim.js`](verify-claim.js).
 
@@ -130,8 +132,9 @@ Numbers are stable identifiers, not chronological order.
 | 5 | 2026-09-01 | One wallet: 92.7% of Base transactions | Holds for the 30-day window; 21.9% over the last seven days | Internal review |
 | [6](CORRECTION-02-concentration.md) | 2026-09-02 | XRPL: largest payer 1.3%, described as the most evenly distributed chain | Largest recipient 74.6%; the most concentrated of the four by recipient | Internal review |
 | [7](CORRECTION-07-ruleset-log.md) | 2026-09-03 | 12 logged ruleset changes, each with the observations it invalidates | 15 distinct changes; 12 of them had no effect. No published figure changes. | Internal review |
+| [8](CORRECTION-08-report-04-figures.md) | 2026-09-04 | Base 124,530 payments 25 Aug-1 Sep; XRPL 719,932 payments; XRPL value 1,039.71 unitless | Base had no timestamped payments in that window; no window sums to 719,932; XRPL settles in RLUSD and XRP and the two were reported as one figure. Table withdrawn pending recomputation. | Internal review |
 
-6 corrections to published figures, 1 found by the provider measured.
+7 corrections to published figures, 1 found by the provider measured.
 Entry 1 corrected an error caught before publication; it is listed for continuity of numbering.
 
 Correction 4 matters most. A Stellar provider sent their own figures, which did not match. The defect was a 1 USDC filter discarding 63% of their volume — and it affected every Stellar figure published up to that point. After the fix, the numbers match theirs exactly.
