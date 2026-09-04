@@ -77,6 +77,19 @@ Two providers currently sit at n=34: one with zero faults and a bound of 10.2%, 
 
 The threshold of 20 is where the interval starts to constrain anything. Below it the bound exceeds 20% even with a clean record, which rules out nothing.
 
+### Batch queries
+
+    POST /v1/providers
+    {"endpoints": ["<url>", "<url>", ...]}
+
+Up to 50 endpoints per request, same response shape as above inside a `results` array, each entry carrying its own signature. Endpoints with no aggregate come back as `no_data` rather than being dropped, so a caller can tell what is unmeasured from what is unmeasurable.
+
+A seller checking a catalogue against a per-IP limit of 60 requests per 5 minutes cannot do it one endpoint at a time.
+
+### Retired
+
+`/api/v1/*` returns 410. Those routes read from tables that stopped being written on 20 August 2026 and were serving stale figures as current.
+
 Preview quality: HTTP only, rate limited to 60 requests per IP per 5 minutes. Not yet suitable for production.
 
 ---
