@@ -100,6 +100,27 @@ The endpoints currently in the paid panel, with the chain they settle on, the ca
 
 `relationship` is `observed` for providers with no contact, and `collaborating` for those who have supplied their own figures or adopted the vocabulary. That distinction is published rather than hidden: a provider that talks to the observatory is measured by the same method as one that does not, but the reader should be able to see which is which.
 
+### Liveness
+
+Every response carries a `liveness` block: whether the endpoint answers a 402 challenge, with what status, how fast, and what its envelope declares.
+
+    "liveness": {
+      "outcome": "charges",
+      "statusCode": 402,
+      "latencyMs": 164,
+      "ageSeconds": 17,
+      "declares": { "network": "...", "amount": "...", "offers": 13,
+                    "extensions": ["bazaar"], "hasDelivery": false }
+    }
+
+`outcome` is `charges`, `free`, `gone`, `unreachable` or `other`. No payment is made: the sweep requests the challenge and stops there.
+
+**This is a different signal from delivery, and it is kept separate on purpose.** An endpoint that always answers can still serve wrong content, and the fault rate says nothing about whether it is reachable. `liveness` never alters `status` or `faultRateUpperBound`. A seller can decline to sell what does not answer without confusing that with declining to sell what fails.
+
+It also means an endpoint that has never been bought is no longer a blank. `status: no_data` with a populated `liveness` block says: nothing is known about what it delivers, and here is what it says about itself.
+
+`hasDelivery` records whether the envelope carries the `extensions.delivery` block proposed in the specification. It is currently false everywhere, which is the baseline this is measured against.
+
 ### Retired
 
 `/api/v1/*` returns 410. Those routes read from tables that stopped being written on 20 August 2026 and were serving stale figures as current.
