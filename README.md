@@ -100,6 +100,20 @@ The endpoints currently in the paid panel, with the chain they settle on, the ca
 
 `relationship` is `observed` for providers with no contact, and `collaborating` for those who have supplied their own figures or adopted the vocabulary. That distinction is published rather than hidden: a provider that talks to the observatory is measured by the same method as one that does not, but the reader should be able to see which is which.
 
+### History
+
+    GET /v1/history?endpoint=<url>&days=30&resolution=daily
+
+The aggregates issued for an endpoint over time, as they were issued and signed — not recomputed. The series starts when aggregate emission started, which is later than when measurement started.
+
+`resolution=all` returns every aggregate; the default returns one per day.
+
+Each point carries `n`, `faultsObserved`, `faultRate`, `faultRateUpperBound` and the signature. **`n` is returned for a reason**: the upper bound can fall because the provider improved or because the sample grew, and the two are different claims.
+
+**The response also carries `rulesetChanges`** — the rule changes in the window that can move a series, with their reason. Without them, a discontinuity looks like lost data. On 2 September a change of criterion cut one provider's sample from 97 observations to 16 in the same window; the series alone does not explain that, and the change does.
+
+Changes that invalidate nothing are omitted, or the list would be noise.
+
 ### Liveness
 
 Every response carries a `liveness` block: whether the endpoint answers a 402 challenge, with what status, how fast, and what its envelope declares.
