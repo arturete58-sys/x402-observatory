@@ -171,8 +171,9 @@ Numbers are stable identifiers, not chronological order.
 | [7](CORRECTION-07-ruleset-log.md) | 2026-09-03 | 12 logged ruleset changes, each with the observations it invalidates | 15 distinct changes; 12 of them had no effect. No published figure changes. | Internal review |
 | [8](CORRECTION-08-report-04-figures.md) | 2026-09-04 | Base 124,530 payments 25 Aug-1 Sep; XRPL 719,932 payments; XRPL value 1,039.71 unitless | Base had no timestamped payments in that window; no window sums to 719,932; XRPL settles in RLUSD and XRP and the two were reported as one figure. Table withdrawn pending recomputation. | Internal review |
 | [9](CORRECTION-09-report-04-recomputed.md) | 2026-09-05 | Table withdrawn by Correction 08 | Base 289,052 payments 194,944.44 USDC; XRPL 834,420 RLUSD payments to a single recipient plus 168,097 XRP payments to 101; Solana 1,607; Stellar 115. Window 29 Aug-5 Sep, coverage stated. | Internal review |
+| [10](CORRECTION-10-xrpl-payer-distribution.md) | 2026-09-07 | XRPL: 113 payers, none above 1.3%, described as the most evenly distributed chain | 109 addresses making between 1,879 and 1,898 payments on the same day, coefficient of variation 0.155-0.203%, against ~100% on Base measured identically. A payer count is a count of addresses, not of buyers. | Internal review |
 
-8 corrections to published figures, 1 found by the provider measured.
+9 corrections to published figures, 1 found by the provider measured.
 Entry 1 corrected an error caught before publication; it is listed for continuity of numbering.
 
 Correction 4 matters most. A Stellar provider sent their own figures, which did not match. The defect was a 1 USDC filter discarding 63% of their volume — and it affected every Stellar figure published up to that point. After the fix, the numbers match theirs exactly.
