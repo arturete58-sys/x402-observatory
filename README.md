@@ -104,7 +104,7 @@ The endpoints currently in the paid panel, with the chain they settle on, the ca
 
 `/api/v1/*` returns 410. Those routes read from tables that stopped being written on 20 August 2026 and were serving stale figures as current.
 
-Preview quality: HTTP only, rate limited to 60 requests per IP per 5 minutes. Not yet suitable for production.
+Live at **https://402scope.org**. Rate limited to 60 requests per IP per 5 minutes; a batch of 50 counts as one request.
 
 ---
 
