@@ -45,7 +45,7 @@ Same criteria on all four chains: stablecoin transfers, account-to-account, inbo
 
 ## 2. The seven-day picture
 
-> **Withdrawn 4 September 2026.** The table below does not reproduce. Base had no timestamped payments in the declared window, XRPL's payment count matches no window of consecutive days, and its settled value adds RLUSD to XRP and reports the total as one unitless figure. See [Correction 08](CORRECTION-08-report-04-figures.md). The figures are left in place rather than deleted, so that what was published can still be read.
+> **Withdrawn 4 September 2026.** The table below does not reproduce. Base had no timestamped payments in the declared window, XRPL's payment count matches no window of consecutive days, and its settled value adds RLUSD to XRP and reports the total as one unitless figure. See [Correction 08](CORRECTION-08-report-04-figures.md). **Recomputed on 5 September** over a new window with the query published alongside: [Correction 09](CORRECTION-09-report-04-recomputed.md). The figures below are left in place rather than deleted, so that what was published can still be read.
 
 | Chain | Payments | Payers | Recipients | Value settled |
 |---|---:|---:|---:|---:|
