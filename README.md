@@ -35,6 +35,10 @@ Each report states the figures as of its own date. The census has since changed 
 
 - **[07 — Most providers have no way to be found except through one facilitator](report-07-discovery-depends-on-one-facilitator.md)**: the Bazaar catalogues what CDP's facilitator settles, not what exists. 87% of catalogued resources publish no discovery of their own; 702 live resources appear in no bazaar at all.
 
+- **[08 — What the catalogue and the chain reveal together](report-08-catalogue-and-chain.md)**: 2,102 payer wallets are attributable to 14,717 specific resources using only public data. 104 resources across 51 hosts have URLs that name their subject matter.
+
+- **[Note — one provider declares what happens when delivery fails](NOTE-delivery-declarations.md)**: 151 of 19,941 endpoints declare a delivery commitment, and all 151 belong to the same provider.
+
 - **[XRPL index](XRPL-INDEX.md)**: 106 addresses receiving x402 payments on the XRP Ledger. Not one resolves to a service through any public route. Addresses can be claimed with a signature, verifiable by anyone with [`verify-claim.js`](verify-claim.js).
 
 **[Corrections](CORRECTION-01-chains.md)** are published in full, including the figures that were more flattering before they were wrong.
