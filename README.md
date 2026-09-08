@@ -169,6 +169,22 @@ The response says whether the signature is valid, whether it covers the delivere
 
 Two receipt shapes are handled: one where the receipt declares a `covers` list of the fields it signs, and one where the signature is over the `result` field. The first is better and needs no guessing.
 
+### Threshold alerts
+
+    POST /v1/watch
+    Authorization: Bearer <token>
+    {"boundAbove": 0.15, "callbackUrl": "https://..."}
+
+Register a fault-rate upper bound and a URL. The observatory posts to it when a provider crosses that bound, instead of the caller polling every two hours. Omit `endpoint` to watch the whole panel.
+
+**It fires on state change only.** While a provider stays above the bound, nothing further is sent. An alert every two hours about a situation that has not changed is noise, and noise is what makes alerts get switched off. Registering a watch records the current state without notifying, so setting one up does not produce an immediate flood.
+
+The payload carries `n` and `faultsObserved` alongside the bound. **This matters**: a provider with zero faults in eleven observations has an upper bound of 25.9% and will cross a 15% threshold. That is not a bad provider — it is one that cannot yet be ruled out, which is exactly what a conservative policy should hold. The two cases are distinguishable only if you look at `n`.
+
+Each notification includes the attestation set hash and signature, so it can be verified without trusting the delivery.
+
+**Delivery is best-effort.** State is updated whether or not the callback succeeds: retrying in a loop against a receiver that is down is worse than losing one notification. Poll `/v1/provider` if a notification matters.
+
 ### Retired
 
 `/api/v1/*` returns 410. Those routes read from tables that stopped being written on 20 August 2026 and were serving stale figures as current.
