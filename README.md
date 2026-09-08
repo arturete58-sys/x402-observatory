@@ -218,6 +218,20 @@ Most of this API is free and stays free: `/v1/provider`, `/v1/providers`, `/v1/e
 
 Revenue and measurement costs are both on public addresses. On Base they are separate addresses, so the two can be told apart.
 
+### Market size
+
+    GET /v1/market?days=30&threshold=0.01
+
+Activity on the chain, split between payers whose scale is orders of magnitude above everyone else and the rest.
+
+**Counting transactions and counting money give opposite pictures.** Over thirty days on Base, two addresses account for **93.2% of payments and 16.1% of the value**. The other 10,312 payers make 6.8% of the transactions and move 83.9% of the money.
+
+The transaction count is the figure usually quoted, because it is what an explorer shows.
+
+`threshold` is the share of chain activity above which a payer is treated as outsized. It defaults to 1%, it is arbitrary, and it is declared rather than derived — change it and the split moves. What does not move is that removing two addresses removes most of the transactions and almost none of the value.
+
+The outsized payers operate in bursts: 112,378 payments on one day, none for the next four, 316 on the day after. That is not what continuous demand looks like.
+
 ### Retired
 
 `/api/v1/*` returns 410. Those routes read from tables that stopped being written on 20 August 2026 and were serving stale figures as current.
