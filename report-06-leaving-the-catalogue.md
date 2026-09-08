@@ -36,6 +36,8 @@ More resources entered than left. The catalogue grew while a third of its conten
 
 ---
 
+> **Updated 8 September 2026.** The liveness sweep now covers retired resources as well as active ones, so this figure no longer rests on a sample. Of 6,156 retired resources checked directly, **78.0% still return a payment challenge** and a further 0.3% serve without one — 78.3% alive. The sampled estimate of 80.8% published here sat inside its own Wilson interval of 72.8% to 86.8%, so it was right and imprecise rather than wrong. The finding is unchanged and now rests on the whole population.
+
 ## 2. Asking them directly
 
 A random sample of 120 retired resources was requested with its declared method. No payment was made and no payment header was sent — this measures whether the endpoint still answers, not whether it delivers.
