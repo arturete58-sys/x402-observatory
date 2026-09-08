@@ -197,6 +197,23 @@ Endpoints that answer a 402 challenge and whose payment address has received not
 
 Useful before routing: a catalogue lists an abandoned endpoint identically to one in active use.
 
+### Paid routes
+
+Most of this API is free and stays free: `/v1/provider`, `/v1/providers`, `/v1/endpoints`, `/v1/coverage`, `/v1/history`, `/v1/verify`. Those are what make the measurements useful to anyone, and putting them behind a wall would defeat the point.
+
+`/v1/unused` costs 0.002 USDC per call, payable on Base or Stellar. Request it without payment and it returns a 402 challenge with both options.
+
+    GET /v1/unused
+    x-payment-tx: <transaction hash>
+
+**Payments are verified against the chain directly, with no facilitator.** An observatory that measures whether providers deliver what they declare should not depend on a third party it also measures. The same code that indexes Base and Stellar payments verifies these.
+
+**A transaction hash can be claimed once.** The claim is an atomic insert on a primary key, so concurrent requests with the same hash cannot both be served — the failure mode this protects against is documented as a real one in production x402 deployments.
+
+**The challenge declares its own delivery commitment.** If a payment cannot be verified, the request is refused and nothing is consumed. There is no reason to ask the ecosystem for a declaration this observatory does not publish itself.
+
+Revenue and measurement costs are both on public addresses. On Base they are separate addresses, so the two can be told apart.
+
 ### Retired
 
 `/api/v1/*` returns 410. Those routes read from tables that stopped being written on 20 August 2026 and were serving stale figures as current.
