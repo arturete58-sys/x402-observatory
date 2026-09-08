@@ -185,6 +185,18 @@ Each notification includes the attestation set hash and signature, so it can be 
 
 **Delivery is best-effort.** State is updated whether or not the callback succeeds: retrying in a loop against a receiver that is down is worse than losing one notification. Poll `/v1/provider` if a notification matters.
 
+### Endpoints nobody uses
+
+    GET /v1/unused?days=14
+
+Endpoints that answer a 402 challenge and whose payment address has received nothing in the window. Two signals that only mean something together: the catalogue knows an endpoint exists, the chain knows whether anyone pays for it, and no one joins them.
+
+`never_paid` has never received a payment. `idle` was paid at some point and has not been since — the more interesting case, because it worked and then stopped being used while still answering and still being listed.
+
+**This is a floor, not a count.** An address shared across a provider's whole catalogue counts as used for every resource when only one is bought, so a provider with one address hides its unused endpoints behind its active ones. URLs with an unresolved path parameter are excluded: those were never callable and are a catalogue defect rather than an unused service.
+
+Useful before routing: a catalogue lists an abandoned endpoint identically to one in active use.
+
 ### Retired
 
 `/api/v1/*` returns 410. Those routes read from tables that stopped being written on 20 August 2026 and were serving stale figures as current.
