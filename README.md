@@ -222,6 +222,8 @@ Revenue and measurement costs are both on public addresses. On Base they are sep
 
     GET /v1/market?days=30&threshold=0.01
 
+Four chains, each reported by the criterion that fits it and with that criterion named in the response.
+
 Activity on the chain, split between payers whose scale is orders of magnitude above everyone else and the rest.
 
 **Counting transactions and counting money give opposite pictures.** Over thirty days on Base, two addresses account for **93.2% of payments and 16.1% of the value**. The other 10,312 payers make 6.8% of the transactions and move 83.9% of the money.
@@ -229,6 +231,10 @@ Activity on the chain, split between payers whose scale is orders of magnitude a
 The transaction count is the figure usually quoted, because it is what an explorer shows.
 
 `threshold` is the share of chain activity above which a payer is treated as outsized. It defaults to 1%, it is arbitrary, and it is declared rather than derived — change it and the split moves. What does not move is that removing two addresses removes most of the transactions and almost none of the value.
+
+**A payer is treated as outsized only if it clears three conditions**: more than 1% of chain activity, more than fifty times the median payer, and more than ten thousand payments. The first two alone misfire on small networks — with eighteen payers the median is two or three payments, so almost anyone clears fifty times it. Solana's distribution falls smoothly from 718 payments to 93 with no discontinuity anywhere, and nothing there is outsized.
+
+**XRPL gets no market figure.** On its most evenly matched days, 109 addresses made between 1,879 and 1,898 payments each — a coefficient of variation of 0.2% against roughly 100% on Base measured with the same query. That is distribution, not demand, and a payer count there counts addresses rather than buyers. The threshold used on the other chains detects scale and would give a misleading answer.
 
 The outsized payers operate in bursts: 112,378 payments on one day, none for the next four, 316 on the day after. That is not what continuous demand looks like.
 
