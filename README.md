@@ -139,6 +139,21 @@ It also means an endpoint that has never been bought is no longer a blank. `stat
 
 `hasDelivery` records whether the envelope carries the `extensions.delivery` block proposed in the specification. It is currently false everywhere, which is the baseline this is measured against.
 
+### Contributed counts
+
+    POST /v1/report
+    Authorization: Bearer <token>
+    {"reports":[{"endpoint":"<url>","windowStart":"...","windowEnd":"...",
+                 "charges":420,"declaredOk":418,"declaredBad":2}]}
+
+A facilitator sees the in-band `usable` flag on every charge it settles. This observatory sees its own out-of-band measurement. **When a provider declares itself healthy while measurement says otherwise, neither side can see that alone.**
+
+The endpoint accepts counts per provider and window: how many charges, how many declared usable, how many declared not. It does not accept and will not store buyer identities, amounts, or individual transactions.
+
+Contributions are attributed. Every row carries the reporter, so if two facilitators report differently on the same provider it is visible which said what. A token is issued by agreement, not by signing up, and can be revoked without touching anything already contributed.
+
+**Contributed data is published like everything else**, marked as third-party. It is not treated as measurement: it is what a provider said about itself, counted by someone who was there.
+
 ### Retired
 
 `/api/v1/*` returns 410. Those routes read from tables that stopped being written on 20 August 2026 and were serving stale figures as current.
