@@ -154,6 +154,21 @@ Contributions are attributed. Every row carries the reporter, so if two facilita
 
 **Contributed data is published like everything else**, marked as third-party. It is not treated as measurement: it is what a provider said about itself, counted by someone who was there.
 
+### Verifying someone else's attestation
+
+    POST /v1/verify
+    <the provider response, including its receipt>
+
+Some providers sign what they deliver. Verifying that signature means reproducing their canonicalisation, fetching their key, and knowing which fields the signature covers — three things a buyer should not have to work out per provider.
+
+The response says whether the signature is valid, whether it covers the delivered payload, and which canonicalisation and key were used.
+
+**A valid signature means the holder of that key signed that content. It does not mean the content is correct.** A provider can sign a wrong number impeccably. Whether what was delivered matches what was declared is a separate question, answered by buying and comparing, not by checking signatures.
+
+**The key is taken from the receipt itself** and is not checked against any registry. Fetch it from the provider's published location and compare before relying on this — otherwise a forged receipt verifies against its own forged key.
+
+Two receipt shapes are handled: one where the receipt declares a `covers` list of the fields it signs, and one where the signature is over the `result` field. The first is better and needs no guessing.
+
 ### Retired
 
 `/api/v1/*` returns 410. Those routes read from tables that stopped being written on 20 August 2026 and were serving stale figures as current.
