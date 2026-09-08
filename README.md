@@ -23,6 +23,8 @@ Four chains, one method. Raw data published with SHA-256 hashes, every observati
 ## Reports
 
 - **[01 — Ecosystem census](report-01-census.md)**: 15,034 resources map to 1,178 real providers when counted by recipient address rather than endpoint.
+
+Each report states the figures as of its own date. The census has since changed source — see [Report 07](report-07-discovery-depends-on-one-facilitator.md) — and current figures are served from the API rather than restated here.
 - **[02 — Providers declare shape, not quality](report-02-quality-declaration.md)**: 99.84% of resources declare the shape of their response; 7.40% of providers declare anything about its quality. Among the 91 that do, all seven possible combinations appear. No convention exists.
 - **[03 — Who actually pays](report-03-who-pays.md)**: 8,065,305 payments on Base over 30 days. One wallet accounted for 92.7% of transactions. 52.2% of payers made a single payment and did not return.
 - **[04 — Four chains, one method](report-04-four-chains.md)**: four chains indexed with their criteria declared. Its main table was withdrawn ([Correction 08](CORRECTION-08-report-04-figures.md)) and has been recomputed with the query published alongside ([Correction 09](CORRECTION-09-report-04-recomputed.md)). Transaction counts and settled value describe different chains: XRPL settles 3.5× more transactions than Base at 0.47% of the value.
