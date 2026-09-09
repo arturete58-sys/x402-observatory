@@ -53,6 +53,8 @@ Applied across three chains:
 
 ---
 
+> **Resolved 9 September 2026.** A method was found the day after this was published, and it is better than the ones that failed. A ledger closes every 3-4 seconds, so repeated co-occurrence in one is not coincidence. Of 136,496 ledgers carrying payments over seven days, **321 contain a single address** — 0.2%, mean 9.36 addresses per ledger. On Base, in equivalent four-second windows, 72.5% contain a single address and the mean is 1.37. **No XRPL address pays alone in a majority of its own payments; not one of 115.** The count of independent buyers on that chain is zero. Live at `GET /v1/market`, method `ledger-synchrony`. This measures synchrony and still says nothing about who controls the addresses.
+
 ## 3. XRPL is reported differently, and no market size is given
 
 The criterion above detects **scale**. XRPL's problem is not scale.
