@@ -268,6 +268,16 @@ The two shares differ, and the difference is informative: Railway hosts 6.7% of 
 
 Refreshed weekly. Infrastructure does not change daily and resolving two thousand domains every day would be discourteous.
 
+### Which networks are accepted
+
+    GET /v1/networks
+
+Read from every payment offer inside the 402 challenge, not the first one. **43 distinct networks appear** across endpoints that charge: 98.3% accept Base, 40.2% accept Solana, and a third accept more than one chain — some as many as twelve.
+
+The catalogue indexes Base, so it presents the ecosystem as single-chain. The providers say otherwise in the envelope they return, and nothing aggregates that.
+
+**A declared network is an offer, not a settled payment.** That an endpoint advertises XRPL does not prove it has ever been paid there. Some identifiers in the envelopes are malformed — `xrpl:0` is not a valid CAIP-2 identifier — which is a property of the declarations rather than of this measurement.
+
 ### Retired
 
 `/api/v1/*` returns 410. Those routes read from tables that stopped being written on 20 August 2026 and were serving stale figures as current.
