@@ -16,6 +16,8 @@ There is a second route. The `/.well-known/x402.json` convention lets a provider
 
 ---
 
+> **Note added 9 September 2026.** The multi-chain picture is wider than the catalogue shows. Reading the payment offers inside the 402 challenges rather than the first one each advertises, **43 distinct networks appear** across endpoints that charge — Base, Solana, Polygon, Arbitrum, Monad, BSC, Algorand, XRPL and more. Base is still the core: 55% of endpoints accept a single network and almost all of those are Base. But a third accept more than one, some as many as twelve, and **883 endpoints declare an XRPL payment option** in their own envelope. So the claim that there is no discovery outside Base holds for the *catalogue*, which indexes Base, and not for the providers themselves, who declare support for other chains in the 402 they return. That discovery exists; nothing aggregates it. The figure was missed until now because the sweep stored only the first offer of each envelope, which was almost always Base — a defect since corrected (see the note on price drift and ruleset v3.9).
+
 ## 1. How a resource gets into the Bazaar
 
 From CDP's own documentation: the Bazaar is *"a catalog of payment-required services discovered by CDP's facilitator"*, listing *"services that accept x402 payments with the CDP facilitator"*.
