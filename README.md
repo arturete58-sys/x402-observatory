@@ -254,6 +254,20 @@ Six checks, one for each defect that has reached production here: duplicate vend
 
 If the check itself stops running, the response says so. A checker that is not running is worse than not having one, because it looks like everything is fine.
 
+### Infrastructure concentration
+
+    GET /v1/infrastructure
+
+Which networks serve the catalogue, resolved from DNS and a batched WHOIS lookup. No endpoint is contacted.
+
+**Three providers front 65.5% of hosts.** Cloudflare alone sits in front of 36.6% of hosts and 38.6% of resources; Amazon follows at 22.6% of hosts.
+
+The two shares differ, and the difference is informative: Railway hosts 6.7% of hosts but 10.4% of resources, while DigitalOcean hosts 4.4% of hosts and 0.9% of resources. One is used for catalogues, the other for single services.
+
+**This measures who serves the traffic, not where the server lives.** A host behind a CDN resolves to the CDN regardless of where its origin runs. For availability risk that is the correct measure — if the CDN is down, so is the endpoint — and for anything else it is the wrong one.
+
+Refreshed weekly. Infrastructure does not change daily and resolving two thousand domains every day would be discourteous.
+
 ### Retired
 
 `/api/v1/*` returns 410. Those routes read from tables that stopped being written on 20 August 2026 and were serving stale figures as current.
