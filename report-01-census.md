@@ -4,6 +4,8 @@ First report from the observatory. 22 August 2026.
 
 ---
 
+> **Note added 9 September 2026.** The figure of 1,178 providers does not reproduce. Reconstructing the same period from the catalogue as it stood before 19 August gives **1,211 distinct payment addresses**, and no filter has been found that yields 1,178 — the query that produced it was not saved. Two defects have since been corrected that affect any provider count: vendor identity was derived from the network label plus the address, so the same provider listed under both `base` and `eip155:8453` counted twice, and correcting that label created a second round of duplicates that has also been merged. The current count is 1,696 vendors for 1,696 distinct address-and-chain pairs. This report's finding — that resources map to far fewer real providers when counted by recipient address than by endpoint — is unaffected; the specific number is not reproducible and is left as published rather than quietly restated. Every figure published since 4 September ships with the query that produces it.
+
 ## Summary
 
 A full census of the public discovery catalogues for the x402 standard was carried out. The result:
