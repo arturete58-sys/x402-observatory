@@ -44,6 +44,8 @@ Total payments indexed on Base in the window: 9,495,471. **The first payer alone
 
 **What this does not establish:** whether these are independent customers, instances operated by one party, testing infrastructure, or a provider paying itself. On-chain data shows the shape of the traffic, not who controls the addresses. All three are catalogued addresses paying catalogued recipients, which is all that can be said from here.
 
+> **Corrected 8 September 2026.** The payer did not stop. It resumed on 2 September with 112,378 payments in one day and operates in bursts; August's silence was a longer gap than usual rather than an ending. See [Report 09 §4](report-09-transactions-and-value.md). The concentration and the flat underlying market are unaffected.
+
 ### 2.1 The 22 August stop
 
 The dominant payer's daily volume, in payments:

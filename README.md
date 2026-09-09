@@ -39,6 +39,8 @@ Each report states the figures as of its own date. The census has since changed 
 
 - **[Note — one provider declares what happens when delivery fails](NOTE-delivery-declarations.md)**: 151 of 19,941 endpoints declare a delivery commitment, and all 151 belong to the same provider.
 
+- **[09 — Counting transactions and counting money describe different ecosystems](report-09-transactions-and-value.md)**: two addresses account for 93.2% of payments on Base and 16.1% of the value. The other 10,312 payers move 83.9% of the money. Includes a correction to Report 05.
+
 - **[XRPL index](XRPL-INDEX.md)**: 106 addresses receiving x402 payments on the XRP Ledger. Not one resolves to a service through any public route. Addresses can be claimed with a signature, verifiable by anyone with [`verify-claim.js`](verify-claim.js).
 
 **[Corrections](CORRECTION-01-chains.md)** are published in full, including the figures that were more flattering before they were wrong.
