@@ -244,6 +244,16 @@ That is a measurement of synchrony, not a claim about who controls the addresses
 
 The outsized payers operate in bursts: 112,378 payments on one day, none for the next four, 316 on the day after. That is not what continuous demand looks like.
 
+### Is the instrument working
+
+    GET /v1/health
+
+Six checks, one for each defect that has reached production here: duplicate vendors created by normalising a chain label without regenerating the identity hash, payments accumulating with no timestamp when the backfill stopped being scheduled, panel resources retired by the catalogue ingester, and staleness on each scheduled job.
+
+**It reports and does not repair.** A cron that fixes things blindly can merge what it should not.
+
+If the check itself stops running, the response says so. A checker that is not running is worse than not having one, because it looks like everything is fine.
+
 ### Retired
 
 `/api/v1/*` returns 410. Those routes read from tables that stopped being written on 20 August 2026 and were serving stale figures as current.
