@@ -43,6 +43,8 @@ Each report states the figures as of its own date. The census has since changed 
 
 - **[10 — Three networks serve two thirds of the ecosystem](report-10-infrastructure-concentration.md)**: Cloudflare fronts 38.7% of resources, three networks serve 65.5% of hosts. A payment protocol spread across 43 blockchains runs on infrastructure concentrated in a handful of companies.
 
+- **[11 — What twelve endpoints deliver, verified by buying them](report-11-what-twelve-endpoints-deliver.md)**: eleven with zero faults in over a hundred paid purchases each; one at 33.3%, which declares its own degradation accurately in every response. Zero confirmed incorrect deliveries in 2,673 purchases, and six false accusations caught by the instrument auditing itself.
+
 - **[XRPL index](XRPL-INDEX.md)**: 106 addresses receiving x402 payments on the XRP Ledger. Not one resolves to a service through any public route. Addresses can be claimed with a signature, verifiable by anyone with [`verify-claim.js`](verify-claim.js).
 
 **[Corrections](CORRECTION-01-chains.md)** are published in full, including the figures that were more flattering before they were wrong.
