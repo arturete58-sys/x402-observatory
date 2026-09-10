@@ -280,6 +280,25 @@ The catalogue indexes Base, so it presents the ecosystem as single-chain. The pr
 
 **A declared network is an offer, not a settled payment.** That an endpoint advertises XRPL does not prove it has ever been paid there. Some identifiers in the envelopes are malformed — `xrpl:0` is not a valid CAIP-2 identifier — which is a property of the declarations rather than of this measurement.
 
+### Check your own endpoint
+
+    GET /v1/lint?url=https://your-endpoint.example/path
+
+Requests the 402 challenge once and checks the envelope. **No payment is made and no malformed request is sent** — it reads what the endpoint returns on its own.
+
+Every rule exists because the failure has been observed in the catalogue, and the response says in how many endpoints:
+
+- **Missing `payment-required` header** — 301 of 21,302. A client reading the header alone gets nothing.
+- **Missing `x402Version`** — 307. A client cannot tell which version it is talking to.
+- **Missing `scheme`** — 317. It is required.
+- **Network identifier that is not CAIP-2** — `xrpl:0` appears across 883 endpoints. A client matching on chain id will not recognise it.
+- **Amount with a decimal point** — amounts are atomic units. A client multiplying by the asset's decimals overpays by orders of magnitude, and this has been observed alongside atomic amounts in the same envelope.
+- **Payment window shorter than measured settlement** — the 95th percentile on Base is 2.6 seconds and the worst case 23; on Stellar the 95th is 15.8.
+
+Errors mean a client will break. Warnings mean some clients will. Info is what most of the ecosystem does not do — 19,790 of 19,941 endpoints declare nothing about what happens when delivery fails.
+
+Limited to 10 requests per IP per 5 minutes, more tightly than the rest of the API: each call makes a request to a third party on your behalf.
+
 ### Retired
 
 `/api/v1/*` returns 410. Those routes read from tables that stopped being written on 20 August 2026 and were serving stale figures as current.
