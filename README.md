@@ -312,6 +312,18 @@ Signing with any other wallet claims nothing: the address is checked against wha
 
 That distinction is the point. An observatory that measured claimed endpoints differently from unclaimed ones would be selling visibility, and the figures would stop being worth anything.
 
+### Evidence for a disputed call
+
+    GET /v1/evidence?endpoint=<url>&at=<ISO timestamp>&windowMinutes=120
+
+What this observatory saw on its own purchase of that endpoint around that moment, signed at the time it was made and verifiable against the published key.
+
+A buyer says the delivery failed; a provider says it did not. This is what an independent party with nothing to gain either way observed, with the fault code and whether the provider was at fault by its own declaration.
+
+**Not observing is not observing a failure.** If no observation falls inside the window, the response says so and certifies nothing in either direction. An endpoint outside the paid panel is not bought at all, and the daily liveness sweep is far too coarse to settle a dispute about a single call.
+
+**And an observation says what this observatory received, not what anyone else did.** Two calls seconds apart can differ. A provider that failed here may have served another caller correctly at the same moment.
+
 ### Retired
 
 `/api/v1/*` returns 410. Those routes read from tables that stopped being written on 20 August 2026 and were serving stale figures as current.
