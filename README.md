@@ -324,6 +324,24 @@ A buyer says the delivery failed; a provider says it did not. This is what an in
 
 **And an observation says what this observatory received, not what anyone else did.** Two calls seconds apart can differ. A provider that failed here may have served another caller correctly at the same moment.
 
+### Who earns what
+
+    GET /v1/providers-revenue?days=30
+
+Revenue per receiving address on Base, banded by how many days of the month it received anything.
+
+| Band | Providers | Median | 90th percentile |
+|---|---:|---:|---:|
+| Near-daily (25+ days) | 120 | 10.73 USDC | 694.14 |
+| Intermittent (10–24) | 295 | 0.71 USDC | 28.25 |
+| Sporadic (under 10) | 591 | 0.18 USDC | 5.59 |
+
+**Continuity and volume move together.** The near-daily band's median is sixty times the sporadic one's. That is the shape a lender would look for, and it is also why there is nothing to lend against: even in the best band, the median provider takes ten dollars a month.
+
+Excludes the outsized payer described in [Report 09](report-09-transactions-and-value.md), whose bursts of millions of micropayments would describe its recipients rather than itself.
+
+**Measured at the receiving address.** A provider using several addresses is counted several times; one address serving several products is counted once. That is a floor on the number of providers and a ceiling on what each earns.
+
 ### Retired
 
 `/api/v1/*` returns 410. Those routes read from tables that stopped being written on 20 August 2026 and were serving stale figures as current.
