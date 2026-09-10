@@ -299,6 +299,19 @@ Errors mean a client will break. Warnings mean some clients will. Info is what m
 
 Limited to 10 requests per IP per 5 minutes, more tightly than the rest of the API: each call makes a request to a third party on your behalf.
 
+### Watching your own endpoint
+
+    GET  /v1/claim?endpoint=https://your-endpoint.example/path
+    POST /v1/claim   {endpoint, address, signature, date, callbackUrl}
+
+Ask for the message, sign it with the private key of the **payTo address your endpoint declares in its own 402 challenge**, and post it back. A claim then authorises a watch on that endpoint without needing a token from anyone.
+
+Signing with any other wallet claims nothing: the address is checked against what the endpoint itself advertises. The signed message contains the endpoint and the date, so a signature is good for one endpoint and seven days.
+
+**Claiming changes nothing about how the endpoint is measured.** Probing frequency, thresholds and the published fault rate are identical whether an endpoint is claimed or not. What a claim buys is being told when something crosses a bound you set — not a different measurement, and not a better position in anything.
+
+That distinction is the point. An observatory that measured claimed endpoints differently from unclaimed ones would be selling visibility, and the figures would stop being worth anything.
+
 ### Retired
 
 `/api/v1/*` returns 410. Those routes read from tables that stopped being written on 20 August 2026 and were serving stale figures as current.
